@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="./mapStyles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Mapster</h1>
+
+  <div id='map'></div>
+  <hr>
+
+  <div class="options-box">
+    <h2>Create</h2>
+    <div>
+      <input id="zoom-to-area-text" type="text" placeholder="Enter Where To Go!">
+      <input id="zoom-to-area" type="button" value="Zoom">
+    </div>
+    <div>
+      <span class="text">Search for nearby places</span>
+      <input id="places-search" type="text" placeholder="Ex. Bars in the TO">
+      <input id="go-places" type="button" value="Go">
+    </div>
+  <hr>
+
+
+  </div>
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGYsWqSR5oPB0HPL_gjWW8DpwZSAXnf30&libraries=places&callback=initMap"
+         async defer></script>
+
+  <script type="text/javascript" src="./mapScript.js"></script>
+</body>
+</html>
